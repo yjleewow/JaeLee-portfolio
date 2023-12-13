@@ -1,21 +1,26 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Jae Lee - Portfolio</title>
-    <!-- bootstrap CDN -->
+<html lang="en">
+<head>
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
   <!-- linking css file -->
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
-  </head>
-  <body>
-    <!-- Bootstrap Navigation Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
+    <!-- Add class of bg-light to nav element -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Brad</a>
+            <a class="navbar-brand" href="#">Jae</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,7 +39,7 @@
                         <a class="nav-link" href="#portfolio">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Recommendations</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 
@@ -42,170 +47,276 @@
         </div>
     </nav>
     
-    <!-- Original Navigation Bar 
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Jae Lee
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          jaelee@jeemail.com
+    <!-- main banner -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/containers/ -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/grid/ -->
+    <section class="container-fluid section bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
+                <h2 class="hero_title">Hi, it's me Brad</h2>
+                <p class="hero_desc">I am a professional freelancer in New York City</p>
+            </div>
         </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +13456764598
-
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#about-me">Skills</a>
-          <a class="topmenu" href="#about-me">Projects</a>
-          <a class="topmenu" href="#about-me">Recommendations</a>
-        </div>
-      </div>    
-    </nav>
-    -->
-
+    </section>
     
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://images.unsplash.com/photo-1593476550610-87baa860004a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="profile_image"/>
-      </div>
+    <!-- about section -->
+    <section class="container mt-4 pt-4 section" id="about">
+        <h1 class="text-center">About Me</h1>
+        
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="images/about.jpeg" class="image_about" alt="">
+            </div>
 
-      <div>
-          <h1>
-            Hi, I'm Jae! 
-          </h1>
-          <p>
-            I am a senior full stack engineer with these skills: HTML, CSS, JavaScript, Angular, Django, Node.js, Python, Java.
-            I've worked for 10 years at IBM as a full stack engineer and 5 years at Google as a UX Designer.
-            Now I am working on healthcare AI.
-          </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
+            <div class="col-lg-6">
+                <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                    
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Windsurfing</li>
+                            <li>Mountain-climbing</li>
+                            <li>Brain-surgery</li>
 
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>12 years experience</p>
-        </div>  
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Creative-writing</li>
+                            <li>Gymnastics</li>
+                            <li>Landscape painting</li>
 
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>13 years experience</p>
-        </div>  
-
-        <div class="skill">
-            <img src="https://static.djangoproject.com/img/logos/django-logo-positive.png"/>
-            <h6>Django</h6>
-            <p>10 years experience</p>
-          </div>  
-
-          <div class="skill">
-            <img src="https://www.python.org/static/community_logos/python-logo.png"/>
-            <h6>Python</h6>
-            <p>10 years experience</p>
-          </div>  
-
-          <div class="skill">
-            <img src="https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-ar21.svg"/>
-            <h6>IBM Cloud</h6>
-            <p>10 years experience</p>
-          </div>  
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Sports Apparel Website</h3>
-            <ul>
-              <li>Front-end UX Development: HTML, CSS, JavaScript and Figma</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>iOS Journal App Development</h3>
-            <ul>
-              <li>Social Media connected Journal App for iOS</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Smart TV App Development</h3>
-            <ul>
-              <li>Internet browser for Smart TV development: C++, JavaScript</li>
-            </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Jae is always fun! She makes team member into one with her positive, passionate energy. Not to mention her attitude, the outputs she made is the best. She is quick and accurate.
-          <span>&#8221;</span>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I've worked with her for last three years at IBM Cloud. I've worked with her for last three years at IBM Cloud. We've gone through various situations and I've never thought those were exhausting because of her. Her lean-in attitude gave us an inspiration and it made the high morale.
-          <span>&#8221;</span>
+    </section>
+    
+    <!-- services section-->
+    <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
+    <section class="container section" id="services">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Website Development</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Website Design</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Website Deployment</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
         </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I'd like to mention about her critical view point and excellence for problem solving. She never got perplexed  by exceptional errors or situations. I've witnessed that she made things right.
-          <span>&#8221;</span>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">SEO</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">DevOps</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">QA</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
+    <!-- portfolio section-->
+    <section class="section" id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage1.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">YouTube Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage4.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage3.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Product Landing Page</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage4.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Messaging Service</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage1.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitter Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage4.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blog App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
+    
+    <!-- contact section-->
+    <!-- https://getbootstrap.com/docs/5.2/forms/overview -->
+    <section class="container mt-3 section" id="contact">
+        <h1 class="text-center">Contact Me</h1>
 
-    <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-      </a>
-    </div>
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map go to https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=sydney+NSW&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thanks for leaving a recommendation!</h3>
-      <button onclick="showPopup(false)">Ok</button>
-    </div>
-  </body>
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- footer section-->
+    <footer class="container-fluid footer" id="footer">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        </div>
+    </footer>
+    
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
 </html>
