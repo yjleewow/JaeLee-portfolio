@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jae Lee - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Jae Lee
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jaelee@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://images.unsplash.com/photo-1593476550610-87baa860004a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Jae! 
+          </h1>
+          <p>
+            I am a senior full stack engineer with these skills: HTML, CSS, JavaScript, Angular, Django, Node.js, Python, Java.
+            I've worked for 10 years at IBM as a full stack engineer and 5 years at Google as a UX Designer.
+            Now I am working on healthcare AI.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>12 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>13 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://static.djangoproject.com/img/logos/django-logo-positive.png"/>
+            <h6>Django</h6>
+            <p>10 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://www.python.org/static/community_logos/python-logo.png"/>
+            <h6>Python</h6>
+            <p>10 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-ar21.svg"/>
+            <h6>IBM Cloud</h6>
+            <p>10 years experience</p>
+          </div>  
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Sports Apparel Website</h3>
+            <ul>
+              <li>Front-end UX Development: HTML, CSS, JavaScript and Figma</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>iOS Journal App Development</h3>
+            <ul>
+              <li>Social Media connected Journal App for iOS</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Smart TV App Development</h3>
+            <ul>
+              <li>Internet browser for Smart TV development: C++, JavaScript</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Jae is always fun! She makes team member into one with her positive, passionate energy. Not to mention her attitude, the outputs she made is the best. She is quick and accurate.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I've worked with her for last three years at IBM Cloud. I've worked with her for last three years at IBM Cloud. We've gone through various situations and I've never thought those were exhausting because of her. Her lean-in attitude gave us an inspiration and it made the high morale.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I'd like to mention about her critical view point and excellence for problem solving. She never got perplexed  by exceptional errors or situations. I've witnessed that she made things right.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
