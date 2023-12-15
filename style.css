@@ -17,14 +17,14 @@
     margin: 0;
 }
 /* text css above hero image*/
-.hero_title {
+.bn_title {
     padding-top: 10rem;
     font-size: 4.5rem;
 }
-.hero_desc {
+.bn_desc {
     font-size: 2rem;
 }
-.hero_text {
+.bn_text {
     text-align: center;
     position: absolute;
     top: 50%;
